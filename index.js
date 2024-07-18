@@ -28,7 +28,7 @@ const downloadAndModify = async (url, filePath) => {
 			});
 		});
 
-		const modifiedData = data.replace(/Connect/g, 'Connect2');
+		const modifiedData = data.replace(/Connect/g, 'CdlConnect');
 		await writeFileAsync(filePath, modifiedData);
 		console.log('File has been saved with modifications.');
 	} catch (error) {
